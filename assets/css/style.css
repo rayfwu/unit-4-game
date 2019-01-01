@@ -1,1 +1,21 @@
-/* this is a  */
+/*  
+    ---------------------------------------------------------------------------------------------------
+    Font used is as follows:
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">  
+    Saira Semi Condensed
+    font-family: 'Saira Semi Condensed', sans-serif;
+    ---------------------------------------------------------------------------------------------------
+*/
+
+body {
+    background-image: url(../images/star-wars-wallpaper.jpg);
+}
+
+.type-saira {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.char-card {
+    margin: 30px;
+    /* width: 10rem; */
+}
