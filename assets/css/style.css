@@ -16,6 +16,6 @@ body {
 }
 
 .char-card {
-    margin: 30px;
-    /* width: 10rem; */
+    /* margin: 30px; */
+    width: 10rem;
 }

@@ -11,48 +11,105 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet"> 
 </head>
 <body>
-    <!-- This is a comment -->
-    <!-- <div id="pageTitle">Star Wars RPG!</div> -->
-    <nav class="navbar">
-        <h2 class="navbar-brand h2 ml-auto type-saira">Star Wars RPG!</h2>
-    </nav>
-    <div class="container row">
-            <div class="col char-card card shadow-sm bg-white">
-                <div class="card-body">
-                    <div class="card-title text-center type-saira">Obi-Wan Kenobi</div>
-                    <img class="card-img-top img-responsive" src="assets/images/port-kenobi.png">
-                    <div class="card-text text-center type-saira">120</div>
+    <div class="row">
+        <div class="col-md-4 col-lg-8 col-xl-8">
+            
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="h1 ml-auto type-saira">Star Wars RPG!</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-8 col-xl-8">
+            <div class="card-deck">
+                <div id="btn-kenobi">
+                    <div id="btn-kenobi-back" class="char-card card shadow-sm bg-white">
+                        <div class="card-body">
+                            <div class="card-title text-center type-saira">Obi-Wan Kenobi</div>
+                            <img class="card-img-top img-responsive" src="assets/images/port-kenobi.png">
+                            <div class="card-text text-center type-saira">120</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="btn-skywalker">
+                    <div class="btn-skywalker-back char-card card shadow-sm bg-white">
+                        <div class="card-body">
+                            <div class="card-title text-center type-saira">Luke Skywalker</div>
+                            <img class="card-img-top img-responsive" src="assets/images/port-luke.png">
+                            <div class="card-text text-center type-saira">100</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="btn-sidious">
+                    <div class="btn-sidious-back char-card card shadow-sm bg-white">
+                        <div class="card-body">
+                            <div class="card-title text-center type-saira">Darth Sidious</div>
+                            <img class="card-img-top img-responsive" src="assets/images/port-sidious.png">
+                            <div class="card-text text-center type-saira">150</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="btn-maul">
+                    <div class="btn-maul-back char-card card shadow-sm bg-white">
+                        <div class="card-body">
+                            <div class="card-title text-center type-saira">Darth Maul</div>
+                            <img class="card-img-top img-responsive" src="assets/images/port-maul.png">
+                            <div class="card-text text-center type-saira">180</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="col char-card card shadow-sm bg-white">
-                <div class="card-body">
-                    <div class="card-title text-center type-saira">Luke Skywalker</div>
-                    <img class="card-img-top img-responsive" src="assets/images/port-luke.png">
-                    <div class="card-text text-center type-saira">100</div>
-                </div>
-            </div>
-            <br>
-            <div class="col char-card card shadow-sm bg-white">
-                <div class="card-body">
-                    <div class="card-title text-center type-saira">Darth Sidious</div>
-                    <img class="card-img-top img-responsive" src="assets/images/port-sidious.png">
-                    <div class="card-text text-center type-saira">150</div>
-                </div>
-            </div>
-            <br>
-            <div class="col char-card card shadow-sm bg-white">
-                <div class="card-body">
-                    <div class="card-title text-center type-saira">Darth Maul</div>
-                    <img class="card-img-top img-responsive" src="assets/images/port-maul.png">
-                    <div class="card-text text-center type-saira">180</div>
-                </div>
-            </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            
+        </div>
+    </div>
+
+    <br>
+    
+
         <!-- Character element consists of five components: a background, name, portrait, hit points, and an invisible button over it all -->
         <!-- <button class="charPort"><img src="assets/images/d_mau.png"></button> -->
-        
-    </div>
     <h2 class="type-saira">Your Character</h2>
+
+    <div id="char-space" class="row">
+
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-8 col-xl-8">
+            Enemies available to attack
+        </div>
+        <div class="col-md-4 col-xl-3">
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-8 col-xl-8">
+            Fight section
+        </div>
+        <div class="col-md-4 col-xl-3">
+            
+        </div>
+    </div>
+
+    <button class="btn btn-primary">Fight</button>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-8 col-xl-8">
+            Defender
+        </div>
+        <div class="col-md-4 col-xl-3">
+            
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
