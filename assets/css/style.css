@@ -19,3 +19,19 @@ body {
     /* margin: 30px; */
     width: 10rem;
 }
+
+#enemy-kenobi-back {
+    display: none;
+}
+
+#enemy-skywalker-back {
+    display: none;
+}
+
+#enemy-sidious-back {
+    display: none;
+}
+
+#enemy-maul-back {
+    display: none;
+}
