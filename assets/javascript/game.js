@@ -13,21 +13,38 @@
 
 $(document).ready(function(){
 
-    function Character(pChar, pColor, pHP) {
-        this.pChar = pChar,
-        this.pColor = pColor,
-        this.pHP = pHP,
-        this.pID = pChar.attr('id'),
+    function Character(pChar, pColor, pHP, hitPoints, attackPower, counterAttackPower) {
+        // pointers to access html elements
+        this.pChar       = pChar,
+        this.pColor      = pColor,
+        this.pHP         = pHP,
+        this.pID         = pChar.attr('id'),
+
+        // variables for each character's attributes
+        this.hitPoints          = hitPoints,
+        this.attackPower        = attackPower,
+        this.counterAttackPower = counterAttackPower,
+
+        this.updateHP = function() {
+            this.pHP.text(this.hitPoints);
+        }
+
+        this.updateHP();
+
+        // functions to move character to other locations
         this.enemySelect = function() {
             pChar.appendTo("#enemy-area");
+            pColor.removeClass("bg-white");
+            pColor.addClass("bg-danger");
         }
     }
 
-    var kenobi = new Character($("#btn-kenobi"), $("#btn-kenobi-back"), $("#kenobi-hp"));
-    var skywalker = new Character($("#btn-skywalker"), $("#btn-skywalker-back"), $("#skywalker-hp"));
-    var sidious = new Character($("#btn-sidious"), $("#btn-sidious-back"), $("#sidious-hp"));
-    var maul = new Character($("#btn-maul"), $("#btn-maul-back"), $("#maul-hp"));
+    var kenobi    = new Character($("#btn-kenobi"), $("#btn-kenobi-back"), $("#kenobi-hp"), 120, 6, 15);
+    var skywalker = new Character($("#btn-skywalker"), $("#btn-skywalker-back"), $("#skywalker-hp"), 100, 5, 10);
+    var sidious   = new Character($("#btn-sidious"), $("#btn-sidious-back"), $("#sidious-hp"), 150, 8, 20);
+    var maul      = new Character($("#btn-maul"), $("#btn-maul-back"), $("#maul-hp"), 180, 9, 25);
 
+    // put all the characters into an array to quickly access all of them in one statement
     var players = [kenobi, skywalker, sidious, maul];
 
     for (let i = 0; i < players.length; i++) {
